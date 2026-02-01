@@ -1,0 +1,160 @@
+/* Responsive Design - Mobile First Approach */
+
+/* ================================
+   MOBILE (Base styles in style.css)
+   ================================ */
+
+/* ================================
+   TABLET (768px and up)
+   ================================ */
+
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero-portrait {
+    width: 350px;
+    height: 350px;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-info {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .donations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ================================
+   DESKTOP (1024px and up)
+   ================================ */
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-portrait {
+    width: 400px;
+    height: 400px;
+  }
+
+  .bio-paragraph {
+    font-size: 1.25rem;
+  }
+
+  .donations-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ================================
+   LARGE DESKTOP (1440px and up)
+   ================================ */
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+}
+
+/* ================================
+   MOBILE NAVIGATION (max-width: 767px)
+   ================================ */
+
+@media (max-width: 767px) {
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: var(--background);
+    width: 100%;
+    text-align: center;
+    transition: left 0.3s ease;
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-md) 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-link {
+    padding: var(--spacing-md);
+    width: 100%;
+  }
+
+  .hero {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-portrait {
+    width: 250px;
+    height: 250px;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .donations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ================================
+   PRINT STYLES
+   ================================ */
+
+@media print {
+  .header,
+  .footer,
+  .mobile-menu-toggle {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    color: #000;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .hero,
+  .biography,
+  .contact,
+  .donations-section {
+    padding: 1rem 0;
+  }
+}
