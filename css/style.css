@@ -150,10 +150,10 @@ body {
 }
 
 .hero-portrait {
-  width: 300px;
+  width: 150px;
   height: 300px;
-  border-radius: 50%;
-  object-fit: cover;
+  border-radius: var(--radius-md);
+  object-fit: contain;
   margin: 0 auto var(--spacing-md);
   box-shadow: var(--shadow-lg);
   border: 5px solid var(--background);
