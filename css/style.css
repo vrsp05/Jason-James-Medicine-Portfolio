@@ -332,6 +332,24 @@ body {
   border-top: 1px solid var(--border-color);
 }
 
+.donation-link {
+  display: inline-block;
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.donation-link:hover {
+  background-color: var(--secondary-color);
+  transform: translateX(3px);
+}
+
 /* ================================
    FOOTER
    ================================ */
