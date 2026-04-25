@@ -4,7 +4,7 @@ A professional, heartfelt website portfolio created for Dr. Jason James, my fath
 
 This was a fun and meaningful project to work on - combining my technical skills with the opportunity to honor someone who truly makes a difference in people's lives.
 
-See the website [here](https://jason-james-medicine.netlify.app/).
+See the website [here](https://vrsp05.github.io/Dr-Jason-James-Portfolio/).
 
 ---
 
